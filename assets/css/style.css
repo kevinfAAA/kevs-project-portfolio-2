@@ -32,39 +32,88 @@ body h2 {
 /*Quiz Links*/
 
 #quizes {
+  height: 615px;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.quizes-top {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  margin: 6px 0;
+}
+
+.quizes-bottom {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  margin: 6px 0;
+}
+
+
+
+
+
+
+
+
+
+/*Viewport sizes max/min 700px wide */
+
+@media only screen and (max-width: 700px) {
+  
+  #quizes {
+    height: 1130px;
+  }
+
+  .quizes-top {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+
+  .quizes-bottom {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+
+/*Viewport sizes max/min 500px wide */
+
+@media only screen and (max-width: 500px) {
+  
+  #quizes {
+    height: 3030px;
+  }
+  
+  .quizes-top {
     width: 100%;
-    height: 900px
-}
-
-
-/*Top*/
-.box-top {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
   }
 
-  div.desc {
-    text-align: center;
-    font-weight: normal;
-    width: auto;
-    margin: 5px;
-    padding:15px;
-}
-
-/*Bottom*/
-  .box-bottom {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
+  .quizes-bottom {
+    width: 100%;
   }
-
-  div.desc {
-    text-align: center;
-    font-weight: normal;
-    width: auto;
-    margin: 5px;
-    padding:15px;
 }
 
 
