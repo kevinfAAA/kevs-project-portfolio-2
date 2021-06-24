@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: aqua;
 }
 
 /*Heading*/
@@ -86,11 +87,25 @@ footer {
   background-color: aqua;
 }
 
+/*Geography Quiz*/
 
+#geog-gallery img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 20px;
+}
 
-
-
-
+#question-area {
+  max-width: 600px;
+  height: 200px;
+  background-color: rgba(241, 109, 107);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
 
 
 /*Viewport sizes max/min 700px wide */
