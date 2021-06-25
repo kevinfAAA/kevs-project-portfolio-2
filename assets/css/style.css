@@ -89,24 +89,29 @@ footer {
 
 /*Geography Quiz*/
 
-#geog-gallery img {
+#geog-gallery {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  height: 400px;
   border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  background: url('../images/geography.jpg') no-repeat center center;
+  background-size: cover;
 }
 
 #question-area {
-  max-width: 600px;
-  height: 200px;
-  background-color: rgba(241, 109, 107);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 20px;
+    width: 80%;
+    background-color: rgba(168,168,168);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
 }
-
 
 /*Viewport sizes max/min 700px wide */
 
