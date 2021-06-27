@@ -1,17 +1,20 @@
 /*Goegrapghy Quiz*/  
 
 //variables
-var quiz = [];
-quiz[0] = new Question("What is 1/4 of 100?", "25", "24", "23");
-quiz[1] = new Question("What color is blood?", "Red", "White", "Green");
-quiz[2] = new Question("What color is grass?", "Green", "White", "Red");
-quiz[3] = new Question("How many legs does a spider have?", "8", "6", "4");
-quiz[4] = new Question("Who is the king of the Netherlands?", "Willem-Alexander", "Willem-Alexzelf", "Willem-Alexniemand");
-quiz[5] = new Question("What is 2-2?", "0", "2", "4");
-quiz[6] = new Question("What was Vincent van Gogh?", "Artist", "Baker", "Jobless");
-var randomQuestion;
-var answers = [];
-var currentScore = 0;
+let quiz = [];
+quiz[0] = new Question("What is the capital of Chile?", "Santiago", "Put in wrong answer", "Put in wrong answer");
+quiz[1] = new Question("What is the highest mountain in Britain?", "Ben Nevis", "Put in wrong answer", "Put in wrong answer");
+quiz[2] = new Question("What is the smallest country in the world?", "Vatican City", "Put in wrong answer", "Put in wrong answer");
+quiz[3] = new Question("Alberta is a province of which country?", "Canada", "Put in wrong answer", "Put in wrong answer");
+quiz[4] = new Question("How many countries still have the shilling as currency?", "Four – Kenya, Uganda, Tanzania and Somalia", "Put in wrong answer", "Put in wrong answer");
+quiz[5] = new Question("Which is the only vowel not used as the first letter in a US State?", "E", "Put in wrong answer", "Put in wrong answer");
+quiz[6] = new Question("What is the largest country in the world?", "Russia", "Put in wrong answer", "Put in wrong answer");
+quiz[7] = new Question("Where would you find the River Thames?", "London, UK", "Put in wrong answer", "Put in wrong answer");
+quiz[8] = new Question("What is the hottest continent on Earth?", "Africa", "Put in wrong answer", "Put in wrong answer");
+quiz[9] = new Question("What is the longest river in the world?", "River Nile", "Put in wrong answer", "Put in wrong answer");
+let randomQuestion;
+let answers = [];
+let currentScore = 0;
 
 document.addEventListener("DOMContentLoaded", function(event) { 
   btnProvideQuestion();
@@ -25,13 +28,13 @@ function Question(question,rightAnswer,wrongAnswer1,wrongAnswer2) {
 };
 
 function shuffle(o) {
-	for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+	for(let j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
 	return o;
 };
 
 function btnProvideQuestion() { 
   
-	var randomNumber = Math.floor(Math.random()*quiz.length);
+	let randomNumber = Math.floor(Math.random()*quiz.length);
 	randomQuestion = quiz[randomNumber]; //getQuestion
   answers = [randomQuestion.rightAnswer, randomQuestion.wrongAnswer1, randomQuestion.wrongAnswer2];
   shuffle(answers);
@@ -47,16 +50,16 @@ function btnProvideQuestion() {
 }
 
 function answerA_clicked() {
-  var answerA = document.getElementById("answerA").value;
+  let answerA = document.getElementById("answerA").value;
   	checkAnswer(answerA);
 }
 
 function answerB_clicked() {
-		var answerB = document.getElementById("answerB").value;
+		let answerB = document.getElementById("answerB").value;
   checkAnswer(answerB);
 }
 function answerC_clicked() {
-  var answerC = document.getElementById("answerC").value;
+  let answerC = document.getElementById("answerC").value;
   	
 		checkAnswer(answerC);
 }

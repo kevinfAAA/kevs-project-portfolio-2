@@ -102,7 +102,7 @@ footer {
   background-size: cover;
 }
 
-#question-area {
+#quiz-area {
     width: 80%;
     background-color: rgba(168,168,168);
     margin: 0;
@@ -116,9 +116,11 @@ footer {
 
 /*Geography Quiz*/
 
-.flex { display:flex;}
+.question-area { 
+  display:flex;
+}
 
-.field {
+.qa {
   min-width: 200px;
   min-height: 30px;
   margin: 10px;
