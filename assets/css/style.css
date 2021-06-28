@@ -29,6 +29,29 @@ body h2 {
     padding: 20px;
 }
 
+/*Difficulty Levels*/
+#levels {
+  font-size: 110%;
+  letter-spacing: 4px;
+  line-height: 75px;
+  text-align: center;
+}
+
+#levels li {
+  display: inline;
+  text-align: center;
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+#levels a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#levels a:hover {
+  border-bottom: 1px solid #3a3a3a;
+}
 
 /*Quiz Links*/
 
