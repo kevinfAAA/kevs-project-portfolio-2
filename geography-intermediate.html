@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Fun Quiz to test your general knowledge">
+    <meta name="keywords" content="fun quiz, general knowledge, best quiz">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Geography</title>
+</head>
+<body>
+  <a href="index.html">
+    <h1>Fun Quizes</h1>
+  </a>
+    <h2>Geography</h2>
+    <section id="geog-gallery">
+         <div id="geog-quiz-area">
+            <div class="geog-question-area">
+                <div class="geog-q-and-a">Score</div>
+                <div id="score" class="field">0</div>
+              </div>
+              <div class="geog-question-area">
+                <div class="geog-q-and-a">Question</div>
+                <div id="question" class="field"></div>
+              </div>
+              <div class="geog-question-area">
+                <div class="geog-q-and-a">Answer A</div>
+                <button id="answerA" onclick="answerA_clicked()"></button>
+              </div>
+              <div class="geog-question-area">
+                <div class="geog-q-and-a">Answer B</div>
+                <button id="answerB" onclick="answerB_clicked()"></button>
+              </div>
+              <div class="geog-question-area">
+                <div class="geog-q-and-a">Answer C</div>
+                <button id="answerC" onclick="answerC_clicked()"></button>
+              </div>  
+         </div>   
+    </section>
+    <script src="assets/js/geography-intermediate.js"></script>
+</body>
+</html>

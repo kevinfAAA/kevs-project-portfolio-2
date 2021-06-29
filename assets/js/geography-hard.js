@@ -2,16 +2,16 @@
 
 //variables
 let quiz = [];
-quiz[0] = new Question("Which river flows through Paris?", "River Seine", "Put in wrong answer", "Put in wrong answer");
-quiz[1] = new Question("In which country is the UK’s highest mountain, Ben Nevis?", "Scotland", "Put in wrong answer", "Put in wrong answer");
-quiz[2] = new Question("Mount Vesuvius overlooks which modern Italian city?", "Naples", "Put in wrong answer", "Put in wrong answer");
-quiz[3] = new Question("What is the highest active volcano in Europe?", "Mount Etna", "Put in wrong answer", "Put in wrong answer");
-quiz[4] = new Question("Which European capital city is divided by canals into about 90 islands joined by about 400 bridges?", "Amsterdam", "Put in wrong answer", "Put in wrong answer");
-quiz[5] = new Question("What’s the world’s biggest port?", "Port of Shanghai", "Put in wrong answer", "Put in wrong answer");
-quiz[6] = new Question("Which South American country has land borders with ten other countries?", "Brazil", "Put in wrong answer", "Put in wrong answer");
-quiz[7] = new Question("Which city is also known as ‘The Eternal City’?", "Rome", "Put in wrong answer", "Put in wrong answer");
-quiz[8] = new Question("The Great Barrier Reef is off the coast of which Australian state?", "Queensland", "Put in wrong answer", "Put in wrong answer");
-quiz[9] = new Question("Which island would you Visit to kiss the Blarney Stone?", "Ireland", "Put in wrong answer", "Put in wrong answer");
+quiz[0] = new Question("Which 'D' is an northern England town on the banks of the River Skerne?", "Darlington", "Put in wrong answer", "Put in wrong answer");
+quiz[1] = new Question("In which English county might you find the towns Darwen and Nelson?", "Lancashire", "Put in wrong answer", "Put in wrong answer");
+quiz[2] = new Question("Which is taller: The Eiffel Tower or Blackpool Tower?", "Eiffel Tower (324m vs 158m)", "Put in wrong answer", "Put in wrong answer");
+quiz[3] = new Question("Baku is the capital city of which eastern European country?", "Azerbaijan", "Put in wrong answer", "Put in wrong answer");
+quiz[4] = new Question("The Danube flows into what body of water?", "The Black Sea", "Put in wrong answer", "Put in wrong answer");
+quiz[5] = new Question("Which river rises in the Himalayas in India and drains into the Bay of Bengal?", "Ganges", "Put in wrong answer", "Put in wrong answer");
+quiz[6] = new Question("Which lake holds by far the largest volume of water in the UK?", "Loch Ness", "Put in wrong answer", "Put in wrong answer");
+quiz[7] = new Question("The M1 motorway in the UK is how many miles long?", "193 miles", "Put in wrong answer", "Put in wrong answer");
+quiz[8] = new Question("How many National Parks are there in Wales?", "Three", "Put in wrong answer", "Put in wrong answer");
+quiz[9] = new Question("In which country is the worlds highest waterfall?", "Venezuela", "Put in wrong answer", "Put in wrong answer");
 let randomQuestion;
 let answers = [];
 let currentScore = 0;
