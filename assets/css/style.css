@@ -97,11 +97,98 @@ div.desc {
 }
 
 
-/*Footer*/
-footer {
+/*Comment Form*/
+input[type=text], select, textarea{
   width: 100%;
-  height: 100px;
-  background-color: aqua;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.comment-section {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.comment-ask {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.comment-text {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.comment-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Footer*/
+
+.social {
+    display: inline-block;
+    width: 100%;
+}
+
+footer {
+    height: 400px;
+    padding:40px 0;
+    background-color:#263238;
+    color:white;
+}
+
+footer .social {
+    text-align: center;
+    padding-bottom:25px;
+}
+  
+footer .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+    margin-top: 150px;
+}
+  
+footer .social > a:hover {
+    opacity:0.9;
+}
+  
+footer .copyright {
+    margin-top: 100px;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
 }
 
 /*Geography Quiz*/
@@ -324,5 +411,12 @@ button:active {
   .quizes-bottom {
     width: 100%;
   }
+
+  .comment-ask, .comment-text, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
 }
+
 
