@@ -227,6 +227,68 @@ button:active {
   background: blue;
 }
 
+/*Timer*/
+
+#timer {
+  font-family: sans-serif;
+  display: grid;
+  height: auto;
+  place-items: center;
+}
+
+.quiz-timer {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.quiz-timer__svg {
+  transform: scaleX(-1);
+}
+
+.quiz-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.quiz-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.quiz-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.quiz-timer__path-remaining.green {
+  color: rgb(65, 184, 131);
+}
+
+.quiz-timer__path-remaining.orange {
+  color: orange;
+}
+
+.quiz-timer__path-remaining.red {
+  color: red;
+}
+
+.quiz-timer__label {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
 /*Viewport sizes max/min 700px wide */
 
 @media only screen and (max-width: 700px) {
