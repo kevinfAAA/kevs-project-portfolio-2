@@ -27,10 +27,15 @@ function Question(question,rightAnswer,wrongAnswer1,wrongAnswer2) {
     this.wrongAnswer2 = wrongAnswer2;
 };
 
-function shuffle(o) {
-	for(let j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-	return o;
-};
+function shuffle(quiz) {
+  for (let i = quiz.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      let temp = quiz[i];
+      quiz[i] = quiz[j];
+      quiz[j] = temp;
+  }
+}
+
 
 function btnProvideQuestion() { 
   
@@ -83,7 +88,11 @@ function checkAnswer(answer) {
   } else { 
     alert("Wrong Answer, Try Again!!!");
     adjustScore(false);
-  }	  
+  }	 
+  if(currentScore === 11) {
+    alert("Congratulations You've Copleted This Quiz, Try A New One");
+    location.reload();
+  }
 }
 
 
@@ -107,7 +116,7 @@ const COLOR_CODES = {
   }
 };
 
-const TIME_LIMIT = 3;
+const TIME_LIMIT = 30;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
@@ -115,7 +124,7 @@ let remainingPathColor = COLOR_CODES.info.color;
 
 document.getElementById("timer").innerHTML = `
 <div class="quiz-timer">
-  <svg class="quiz-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <svg class="quiz-timer__svg" viewBox="0 0 100 100">
     <g class="quiz-timer__circle">
       <circle class="quiz-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
       <path
@@ -154,7 +163,7 @@ function startTimer() {
     setRemainingPathColor(timeLeft);
 
     if (timeLeft === 0) {
-      onTimesUp(alert("Times Up, Please Try Again!!!"));
+      onTimesUp(alert("Times Up, Please Try Again!!!"), location.reload());
     }
   }, 1000);
 }
