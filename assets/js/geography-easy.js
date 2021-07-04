@@ -164,7 +164,7 @@ function startTimer() {
 
     if (timeLeft === 0) {
       onTimesUp(alert("Times Up, Please Try Again!!!"), location.reload());
-    }
+    } 
   }, 1000);
 }
 
