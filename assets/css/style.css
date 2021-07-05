@@ -89,31 +89,25 @@ div.desc {
 }
 
 
-/*Google Charts*/
-#chart {
-  width: 100%;
-  height: 100px;
-  background-color: aqua;
-}
-
-
 /*Comment Form*/
-input[type=text], select, textarea{
+
+input[type=text], textarea {
+  font-family: 'Shadows Into Light', cursive;
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
   resize: vertical;
 }
 
 label {
+  font-family: 'Shadows Into Light', cursive;
   padding: 12px 12px 12px 0;
   display: inline-block;
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -122,10 +116,16 @@ input[type=submit] {
   float: right;
 }
 
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
 .comment-section {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .comment-ask {
@@ -134,7 +134,7 @@ input[type=submit] {
   margin-top: 6px;
 }
 
-.comment-text {
+.comment-area {
   float: left;
   width: 75%;
   margin-top: 6px;
@@ -145,6 +145,7 @@ input[type=submit] {
   display: table;
   clear: both;
 }
+
 
 /*Footer*/
 
@@ -393,6 +394,15 @@ button:active {
     width: 49.99999%;
     margin: 6px 0;
   }
+  
+  .comment-ask, .comment-area, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .comment-section {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 
@@ -410,11 +420,6 @@ button:active {
 
   .quizes-bottom {
     width: 100%;
-  }
-
-  .comment-ask, .comment-text, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
   }
 
 }
