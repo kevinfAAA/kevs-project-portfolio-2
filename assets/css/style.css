@@ -1,37 +1,67 @@
 * {
-    margin:0;
-    padding: 0;
-    border: none;
+  margin:0;
+  padding: 0;
+  border: none;
 }
 
+
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: aqua;
+  font-family: 'Roboto', sans-serif;
+  background-color: aqua;
 }
 
 /*Heading*/
-body h1 {
-    font-family: 'Shadows Into Light', cursive;
-    text-align: center;
-    font-size: 40px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #252525;
-    padding: 20px;
+h1 {
+  font-family: 'Shadows Into Light', cursive;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #252525;
+  padding: 20px;
 }
-body h2 {
-    font-family: 'Shadows Into Light', cursive;
-    text-align: center;
-    font-size: 32px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #252525;
-    padding: 20px;
+
+a  {
+  text-decoration:none;
 }
+a h1:hover {
+  border: 2px solid black;
+}
+
+h2 {
+  font-family: 'Shadows Into Light', cursive;
+  text-align: center;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #252525;
+  padding: 20px;
+}
+
+h3 {
+  font-family: 'Shadows Into Light', cursive;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #252525;
+  padding-top: 20px;
+}
+
+p {
+  font-family: 'Shadows Into Light', cursive;
+  text-align: center;
+  font-size: 16px;
+  text-transform: none;
+  letter-spacing: 4px;
+  color: #252525;
+  padding: 20px;
+}
+
 
 /*Difficulty Levels*/
 #levels {
-  font-size: 110%;
+  font-size: 40px;
   letter-spacing: 4px;
   line-height: 75px;
   text-align: center;
@@ -47,47 +77,13 @@ body h2 {
 #levels a {
   text-decoration: none;
   color: inherit;
+  border: 2px solid white;
+  background-color: red;
 }
 
 #levels a:hover {
-  border-bottom: 1px solid #3a3a3a;
+  border: 2px solid black;
 }
-
-/*Quiz Links*/
-
-#quizes {
-  height: 615px;
-}
-
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.quizes {
-  padding: 0 6px;
-  float: left;
-  width: 32.99999%;
-  margin: 6px 0;
-}
-
 
 /*Comment Form*/
 
@@ -146,51 +142,92 @@ input[type=submit]:hover {
   clear: both;
 }
 
+.comment-row h3{
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
 
 /*Footer*/
 
 .social {
-    display: inline-block;
-    width: 100%;
+  display: inline-block;
+  width: 100%;
 }
 
 footer {
-    height: 400px;
-    padding:40px 0;
-    background-color:#263238;
-    color:white;
+  height: 400px;
+  padding:40px 0;
+  background-color:#263238;
+  color:white;
 }
 
 footer .social {
-    text-align: center;
-    padding-bottom:25px;
+  text-align: center;
+  padding-bottom:25px;
 }
   
 footer .social > a {
-    font-size:24px;
-    width:40px;
-    height:40px;
-    line-height:40px;
-    display:inline-block;
-    text-align:center;
-    border-radius:50%;
-    border:1px solid #ccc;
-    margin:0 8px;
-    color:inherit;
-    opacity:0.75;
-    margin-top: 150px;
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+  margin-top: 150px;
 }
   
 footer .social > a:hover {
-    opacity:0.9;
+  opacity:0.9;
 }
   
 footer .copyright {
-    margin-top: 100px;
-    font-size:13px;
-    color:#aaa;
-    margin-bottom:0;
+  margin-top: 100px;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
 }
+
+/*Quiz Links*/
+
+#quizes {
+  height: 615px;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.quizes {
+  padding: 0 6px;
+  float: left;
+  width: 32.99999%;
+  margin: 6px 0;
+}
+
 
 /*Geography Quiz*/
 
@@ -208,14 +245,14 @@ footer .copyright {
 }
 
 #geog-quiz-area {
-    width: 80%;
-    background-color: rgba(168,168,168);
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 20px;
+  width: 80%;
+  background-color: rgba(168,168,168);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
 }
 
 
@@ -245,14 +282,14 @@ footer .copyright {
 }
 
 #hist-quiz-area {
-    width: 80%;
-    background-color: rgba(168,168,168);
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 20px;
+  width: 80%;
+  background-color: rgba(168,168,168);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
 }
 
 
@@ -282,14 +319,14 @@ footer .copyright {
 }
 
 #sport-quiz-area {
-    width: 80%;
-    background-color: rgba(168,168,168);
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 20px;
+  width: 80%;
+  background-color: rgba(168,168,168);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
 }
 
 
