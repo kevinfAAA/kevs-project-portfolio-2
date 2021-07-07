@@ -85,8 +85,7 @@ function checkAnswer(answer) {
     alert("Wrong Answer, Try Again!!!");
   }	 
   if(currentScore === 11) {
-    alert("Congratulations You've Copleted This Quiz, Try A New One");
-    location.reload();
+    window.location.assign("/assets/html/winner.html");
   }
 }
 
@@ -158,7 +157,7 @@ function startTimer() {
     setRemainingPathColor(timeLeft);
 
     if (timeLeft === 0) {
-      onTimesUp(alert("Times Up, Please Try Again!!!"), location.reload());
+      window.location.assign("/assets/html/times-up.html");
     } 
   }, 1000);
 }
