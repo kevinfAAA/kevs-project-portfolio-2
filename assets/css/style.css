@@ -412,13 +412,34 @@ button:active {
   font-size: 32px;
 }
 
-/*Times-up*/
+/*Times-up Page*/
 
 #times-up {
+  width: 100%;
+  height: 100%;
   display: flex; 
   justify-content: center; 
   align-items: center;
 }
+
+#times-up img {
+  max-width: 100%;
+  height: auto;
+}
+
+#winner {
+  width: 100%;
+  height: 100%;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+#winner img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 /*Viewport sizes max/min 700px wide */
 
