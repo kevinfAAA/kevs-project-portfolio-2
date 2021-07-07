@@ -73,10 +73,6 @@ function adjustScore(isCorrect) {
   debugger;
   if (isCorrect) {
     currentScore++;
-  } else {
-    if (currentScore > 0) {
-      currentScore--;
-  	}
   }
   document.getElementById("score").innerHTML = currentScore;
 }
@@ -87,7 +83,6 @@ function checkAnswer(answer) {
     btnProvideQuestion();
   } else { 
     alert("Wrong Answer, Try Again!!!");
-    adjustScore(false);
   }	 
   if(currentScore === 11) {
     alert("Congratulations You've Copleted This Quiz, Try A New One");

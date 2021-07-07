@@ -2,6 +2,7 @@
   margin:0;
   padding: 0;
   border: none;
+  box-sizing: border-box;
 }
 
 
@@ -217,9 +218,6 @@ div.desc {
   text-align: center;
 }
 
-* {
-  box-sizing: border-box;
-}
 
 .quizes {
   padding: 0 6px;
