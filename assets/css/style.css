@@ -412,6 +412,14 @@ button:active {
   font-size: 32px;
 }
 
+/*Times-up*/
+
+#times-up {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
 /*Viewport sizes max/min 700px wide */
 
 @media only screen and (max-width: 700px) {
