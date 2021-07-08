@@ -8,17 +8,18 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #AFD5EB;
+  background-color: #F93800;
 }
 
 /*Heading*/
+
 .title {
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
-  font-size: 48px;
+  font-size: 40px;
   text-transform: uppercase;
   letter-spacing: 4px;
-  color: #F04520;
+  color: #283350;
   padding-top: 25px;
 }
 
@@ -27,7 +28,7 @@ body {
 }
 
 .title a:hover {
-  border-bottom: 2px solid #F04520;
+  border-bottom: 2px solid #283350;
 }
 
 h2 {
@@ -36,7 +37,7 @@ h2 {
   font-size: 32px;
   text-transform: uppercase;
   letter-spacing: 4px;
-  color: #F04520;
+  color: #283350;
 }
 
 h3 {
@@ -45,7 +46,7 @@ h3 {
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 4px;
-  color: #F04520;
+  color: #283350;
 }
 
 p {
@@ -54,11 +55,11 @@ p {
   font-size: 20px;
   text-transform: none;
   letter-spacing: 4px;
-  color: #F04520;
+  color: #283350;
   padding: 20px;
 }
 
-#qeustion-mark-image {
+#landing-image {
   width: 100%;
   height: 400px;
   background-image: url('../images/highway.jpg');
@@ -86,16 +87,17 @@ p {
 
 #levels a {
   text-decoration: none;
+  text-transform: uppercase;
   color: inherit;
   border: 1px solid white;
-  color: #F04520;
-  background-color: #AFD5EB;
+  color: #283350;
+  background-color: #F93800;
   border-radius: 5px;
   margin: 20px;
 }
 
 #levels a:hover {
-  border: 2px solid #F04520;
+  border: 2px solid #283350;
 }
 
 /*Instruction*/
@@ -110,7 +112,7 @@ input[type=text], textarea {
   font-family: 'Ubuntu', sans-serif;
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #F93800;
   border-radius: 4px;
   resize: vertical;
 }
@@ -123,18 +125,18 @@ label {
 }
 
 input[type=submit] {
-  background-color: #EF869C;
-  color: white;
+  background-color: #F93800;
+  color: #283350;
+  border: 1px solid white;
   padding: 12px 20px;
-  border: none;
   border-radius: 4px;
   cursor: pointer;
   float: right;
 }
 
 input[type=submit]:hover {
-  border: 1px solid white;
-  background-color: #F04520;
+  border: 1px solid #283350;
+  background-color: #F93800;
 }
 
 .comment-section {
@@ -142,6 +144,7 @@ input[type=submit]:hover {
   padding: 20px;
   margin-left: 200px;
   margin-right: 200px;
+  border: 1px solid #283350;
   background:linear-gradient(
     rgba(175, 213, 235, 0.8),
     rgba(175, 213, 235, 0.8)
@@ -153,7 +156,7 @@ input[type=submit]:hover {
 .comment-ask {
   float: left;
   width: 25%;
-  color: #F04520;
+  color: #283350;
   margin-top: 6px;
 }
 
@@ -184,8 +187,8 @@ input[type=submit]:hover {
 
 footer {
   padding:40px 0;
-  background-color:#AFD5EB;
-  color:#EF869C;
+  background-color:#FFB500;
+  color:#F93800;
 }
 
 footer .social {
@@ -201,26 +204,27 @@ footer .social > a {
   display:inline-block;
   text-align:center;
   border-radius:50%;
-  border:1px solid #EF869C;
-  margin:0 8px;
+  border:2px solid #F93800;
+  margin:0 25px;
   color:inherit;
+  opacity:0.6;
 }
   
 footer .social > a:hover {
-  color:#F04520;
-  border:1px solid #F04520;
+  opacity:0.9;
 }
   
 footer .copyright {
   margin-top: 80px;
-  font-size:13px;
-  color:#F04520;
+  font-size: 13px;
+  color:#283350;
 }
 
-/*Quiz Links*/
+/*Quiz Topics Links*/
 
-#quizes {
-  height: 615px;
+#quiz-topics {
+  display: flex;
+  background-color: #F93800;
 }
 
 div.gallery {
@@ -240,7 +244,6 @@ div.desc {
   padding: 15px;
   text-align: center;
 }
-
 
 .quizes {
   padding: 0 6px;
@@ -464,23 +467,18 @@ button:active {
 }
 
 
-/*Viewport sizes max/min 700px wide */
+/*Viewport sizes max/min 800px wide */
 
-@media only screen and (max-width: 700px) {
-  
-  #quizes {
-    height: 1130px;
+@media only screen and (max-width: 800px) {
+
+  #quiz-topics {
+    display: block;
   }
 
-  .quizes-top {
-    width: 49.99999%;
-    margin: 6px 0;
+  .quizes {
+    width: 100%;
   }
 
-  .quizes-bottom {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
   
   .comment-ask, .comment-area, input[type=submit] {
     width: 100%;
@@ -489,6 +487,8 @@ button:active {
   .comment-section {
     margin-left: 0px;
     margin-right: 0px;
+    border-radius: 0px;
+    border: none;
   }
 }
 
@@ -497,18 +497,6 @@ button:active {
 
 @media only screen and (max-width: 500px) {
   
-  #quizes {
-    height: 3030px;
-  }
-  
-  .quizes-top {
-    width: 100%;
-  }
-
-  .quizes-bottom {
-    width: 100%;
-  }
-
 }
 
 
