@@ -11,24 +11,27 @@
     <title>Fun Quiz</title>
 </head>
 <body>
-    <a href="index.html">
-      <h1 id="title">Fun Quizes<i class="fas fa-question-circle"></i></h1>
-    </a>
-    <nav id="levels">
-      <h3>Difficulty Levels</h3>
-      <ul>
-        <li>
+  
+    <h1 class="title">
+      <a class="title" href="index.html">Fun Quizes<i class="fas fa-question-circle"></i></a>
+    </h1>
+    <div id="qeustion-mark-image">
+      <nav id="levels">
+        <h3>Difficulty Levels</h3>
+        <ul>
+          <li>
           <a href="assets/html/topic-easy.html" target="_blank" rel="noopener">Easy</a>
-        </li>
-        <li>
+          </li>
+          <li>
           <a href="assets/html/topic-intermediate.html" target="_blank" rel="noopener">Intermediate</a>
-        </li>
-        <li>
+          </li>
+          <li>
           <a href="assets/html/topic-hard.html" target="_blank" rel="noopener">Hard</a>
-        </li>
+          </li>
       </ul>
-    </nav> 
-    <div>
+      </nav>
+    </div> 
+    <div id="insructions">
       <h2>Instructions</h2>
        <p>This is a fun quiz to test your general knowlegdes with three levels of difficuly to choose from.
        <br>
@@ -37,20 +40,20 @@
       <h3>
         To WIN you need to score 10 correct answers under 1 miunute.
        </h3>
-       <h3>
+       <h2>
         Good Luck!!
-       </h3>
+       </h2>
   </div>
     <section>
       <div class="comment-section">
         <form method="POST" action="https://formdump.codeinstitute.net/" target="_blank" class="register-form">
          <div class="comment-row">
-          <h3>Leave a Comment</h3>
+          <h3>Please tell us about your experience</h3>
           <div class="comment-ask">
             <label for="fname">First Name</label>
           </div>
           <div class="comment-area">
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <input type="text" id="fname" name="firstname" placeholder="Name..">
           </div>
         </div>
         <div class="comment-row">
@@ -58,7 +61,7 @@
             <label for="lname">Last Name</label>
           </div>
           <div class="comment-area">
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <input type="text" id="lname" name="lastname" placeholder="Last name..">
           </div>
         </div>
         <div class="comment-row">
@@ -66,12 +69,12 @@
           <label for="email">Email Address</label>
         </div>
         <div class="comment-area">
-          <input type="text" id="email" name="email" placeholder="Your email address..">
+          <input type="text" id="email" name="email" placeholder="Email address..">
         </div>
         </div>
         <div class="comment-row">
           <div class="comment-ask">
-            <label for="comment">Please tell us about your experience</label>
+            <label for="comment">Leave a Comment</label>
           </div>
           <div class="comment-area">
             <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
