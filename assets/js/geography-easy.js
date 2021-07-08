@@ -84,7 +84,7 @@ function checkAnswer(answer) {
   } else { 
     alert("Wrong Answer, Try Again!!!");
   }	 
-  if(currentScore === 11) {
+  if(currentScore === 10) {
     window.location.assign("/assets/html/winner.html");
   }
 }
