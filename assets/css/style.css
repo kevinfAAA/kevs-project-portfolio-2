@@ -222,7 +222,7 @@ footer .copyright {
 
 /*Quiz Topics Links*/
 
-#quiz-choice {
+#sub-heading {
   padding-top: 20px;
   padding-bottom: 10px;
 }
@@ -267,6 +267,7 @@ footer .copyright {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid #283350;
   width: 50%;
   height: 400px;
   border-radius: 20px;
@@ -278,8 +279,9 @@ footer .copyright {
 
 #geog-quiz-area {
   width: 80%;
-  background-color: rgba(168,168,168);
+  background-color: #FFB500;
   margin: 0;
+  border: 1px solid #283350;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -289,14 +291,20 @@ footer .copyright {
 
 
 .geog-question-area { 
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
   display:flex;
+  color:#283350;
 }
 
 .geog-q-and-a {
+  font-family: 'Ubuntu', sans-serif;
   min-width: 200px;
   min-height: 30px;
   margin: 10px;
+  color:#283350;
 }
+
 
 /*History Quiz*/
 
@@ -304,6 +312,7 @@ footer .copyright {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid #283350;
   width: 50%;
   height: 400px;
   border-radius: 20px;
@@ -315,8 +324,9 @@ footer .copyright {
 
 #hist-quiz-area {
   width: 80%;
-  background-color: rgba(168,168,168);
+  background-color: #FFB500;
   margin: 0;
+  border: 1px solid #283350;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -326,13 +336,18 @@ footer .copyright {
 
 
 .hist-question-area { 
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
   display:flex;
+  color:#283350;
 }
 
 .hist-q-and-a {
+  font-family: 'Ubuntu', sans-serif;
   min-width: 200px;
   min-height: 30px;
   margin: 10px;
+  color:#283350;
 }
 
 /*Sport Quiz*/
@@ -341,19 +356,21 @@ footer .copyright {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid #283350;
   width: 50%;
   height: 400px;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-  background: url('../images/history.jpg') no-repeat center center;
+  background: url('../images/sport.jpg') no-repeat center center;
   background-size: cover;
 }
 
 #sport-quiz-area {
   width: 80%;
-  background-color: rgba(168,168,168);
+  background-color: #FFB500;
   margin: 0;
+  border: 1px solid #283350;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -363,21 +380,28 @@ footer .copyright {
 
 
 .sport-question-area { 
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
   display:flex;
+  color:#283350;
 }
 
 .sport-q-and-a {
+  font-family: 'Ubuntu', sans-serif;
   min-width: 200px;
   min-height: 30px;
   margin: 10px;
+  color:#283350;
 }
 
 button {
   height: 40px;
   width: 200px;
+  font-size: 18px;
   outline: none;
-  background: white;
-  border: black solid 2px;
+  color: #283350;
+  background: #F93800;
+  border: 1px solid #283350;
 }
 
 button:active {
@@ -391,6 +415,7 @@ button:active {
   display: grid;
   height: auto;
   place-items: center;
+  padding-bottom: 20px;
 }
 
 .quiz-timer {
