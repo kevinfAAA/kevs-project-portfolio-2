@@ -187,8 +187,8 @@ input[type=submit]:hover {
 
 footer {
   padding:40px 0;
-  background-color:#FFB500;
-  color:#F93800;
+  background-color:#F93800;
+  color:#FFB500;
 }
 
 footer .social {
@@ -204,7 +204,7 @@ footer .social > a {
   display:inline-block;
   text-align:center;
   border-radius:50%;
-  border:2px solid #F93800;
+  border:2px solid #FFB500;
   margin:0 25px;
   color:inherit;
   opacity:0.6;
@@ -222,27 +222,35 @@ footer .copyright {
 
 /*Quiz Topics Links*/
 
+#quiz-choice {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
 #quiz-topics {
   display: flex;
   background-color: #F93800;
 }
 
-div.gallery {
-  border: 1px solid #ccc;
+.gallery {
+  border: 1px solid #FFB500;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
+.gallery:hover {
+  border: 1px solid #283350;
 }
 
-div.gallery img {
+.gallery img {
   width: 100%;
   height: auto;
 }
 
-div.desc {
+.desc {
   padding: 15px;
   text-align: center;
+  color: #283350;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 
 .quizes {
@@ -489,6 +497,11 @@ button:active {
     margin-right: 0px;
     border-radius: 0px;
     border: none;
+  }
+
+  footer .social > a {
+    margin:0 10px;
+    
   }
 }
 
