@@ -525,8 +525,29 @@ button:active {
   }
 
   footer .social > a {
-    margin:0 10px;
-    
+    margin:0 10px; 
+  }
+
+  #geog-gallery {
+    width: 100%;
+  }
+  
+  #geog-quiz-area {
+    width: 100%;
+  }
+  #hist-gallery {
+    width: 100%;
+  }
+  
+  #hist-quiz-area {
+    width: 100%;
+  }
+  #sport-gallery {
+    width: 100%;
+  }
+  
+  #sport-quiz-area {
+    width: 100%;
   }
 }
 
