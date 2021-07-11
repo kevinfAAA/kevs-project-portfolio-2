@@ -238,7 +238,7 @@ I used [Am I Responsive](http://ami.responsivedesign.is/) to view how my website
 ##### Leave a Comment 
 - can add text to the input tag, It works as expected.
 
-This inofrmation is submited is posted to https://formdump.codeinstitute.net. It Submits as expected. 
+The inofrmation that is submited is posted to https://formdump.codeinstitute.net. It Submits as expected. 
 
 #### Footer
 ##### social media links
@@ -317,6 +317,10 @@ This inofrmation is submited is posted to https://formdump.codeinstitute.net. It
 
 [Go to the top](#table-of-contents)
 
+1. The shuffle function used to generate random questions on the quiz webpage is based on the [Durstenfeld shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#The_modern_algorithm) algorithm. The function shuffles the questions and generates 
+a random question as expected, but there is a bug as while the shuffle function works as expected, the same question can be generated more then once meaning the user may be asked the same question twice and recieve a score for giving the correct answer to a question he/she already answered. 
+<br>
+Perhaps the Durstenfeld shuffle algorithm is not the best function to use or needs to be developed further for what I'm trying to acheive.  
 
 
 <a name="future-updates"></a>
@@ -325,8 +329,8 @@ This inofrmation is submited is posted to https://formdump.codeinstitute.net. It
 
 [Go to the top](#table-of-contents)
 
-- Fix outstanding bugs.
-- When the user selects a wrong answer the button will turn red instead of turning blue.
+1. Look into an alternative for the Durstenfeld shuffle algorithm or develop this algorithm further as it shuffles the questions on the quiz webpage as expected but to improve the user experience a question should only be randomly generated once, meaning the same question should not be generated on more then one occasion. 
+2. When the user selects a wrong answer the button will turn red instead of turning blue.
 
 
 <a name="contribution-links"></a>
@@ -340,9 +344,11 @@ This inofrmation is submited is posted to https://formdump.codeinstitute.net. It
 - [W3schools](https://www.w3schools.com/cssref/pr_text_text-align.asp)
 - [Google fonts](https://fonts.google.com/)
 - [Stack exchange](https://stackexchange.com/)
+- [Stack overflow](https://stackoverflow.com/)
 - [Am I responsive?](http://ami.responsivedesign.is/)
 - [W3C Markup validation](https://validator.w3.org/#validate_by_input)
 - [W3C CSS validation](https://jigsaw.w3.org/css-validator/)
+- [Durstenfeld shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#The_modern_algorithm) 
 
 <a name="deployment"></a>
 
@@ -353,12 +359,12 @@ This inofrmation is submited is posted to https://formdump.codeinstitute.net. It
 This webidte was deployed via GitHub Pages. The following steps explain the deployment process:
 
 - Open your GitHub repository.
-- Go to seeting within your repository .
+- Go to settings within your repository.
 - Scroll down to GitHub Pages. This has its own dedicated tab, Click to open it.
-- When in the GitHub Pages tab go to the Source section and click on the siurce dropdown and select master. 
+- When in the GitHub Pages tab go to the Source section and click on the source dropdown and select master. 
 - Once master is selected click the save button which is also located in the Source section.
-- Once saved the page will refresh and your site is now published, it may take a few minutes to publish (it is good to be aware of this).
-- A link to your published webiste can now be found at the top of the GitHub pages.
+- Once saved, the page will refresh and your site will now be published, it may take a few minutes to publish (it is good to be aware of this).
+- A link to your published webiste can now be found at the top of the GitHub page.
 
 
 <a name="wireframe"></a>
