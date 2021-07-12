@@ -83,7 +83,7 @@ function checkAnswer(answer) {
     btnProvideQuestion();
   } 
   if(currentScore === 10) {
-    window.location.assign("/winner.html");
+    window.location.assign("../winner.html");
   }
 }
 
@@ -155,7 +155,7 @@ function startTimer() {
     setRemainingPathColor(timeLeft);
 
     if (timeLeft === 0) {
-      window.location.assign("/times-up.html");
+      window.location.assign("../times-up.html");
     } 
   }, 1000);
 }
