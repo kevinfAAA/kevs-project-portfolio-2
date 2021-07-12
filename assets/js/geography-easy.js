@@ -2,16 +2,16 @@
 
 // Quiz variables
 let quiz = [];
-quiz[0] = new Question("Which river flows through Paris?", "River Seine", "Put in wrong answer", "Put in wrong answer");
-quiz[1] = new Question("In which country is the UK’s highest mountain, Ben Nevis?", "Scotland", "Put in wrong answer", "Put in wrong answer");
-quiz[2] = new Question("Mount Vesuvius overlooks which modern Italian city?", "Naples", "Put in wrong answer", "Put in wrong answer");
-quiz[3] = new Question("What is the highest active volcano in Europe?", "Mount Etna", "Put in wrong answer", "Put in wrong answer");
-quiz[4] = new Question("Which European capital city is divided by canals into about 90 islands joined by about 400 bridges?", "Amsterdam", "Put in wrong answer", "Put in wrong answer");
-quiz[5] = new Question("What’s the world’s biggest port?", "Port of Shanghai", "Put in wrong answer", "Put in wrong answer");
-quiz[6] = new Question("Which South American country has land borders with ten other countries?", "Brazil", "Put in wrong answer", "Put in wrong answer");
-quiz[7] = new Question("Which city is also known as ‘The Eternal City’?", "Rome", "Put in wrong answer", "Put in wrong answer");
-quiz[8] = new Question("The Great Barrier Reef is off the coast of which Australian state?", "Queensland", "Put in wrong answer", "Put in wrong answer");
-quiz[9] = new Question("Which island would you Visit to kiss the Blarney Stone?", "Ireland", "Put in wrong answer", "Put in wrong answer");
+quiz[0] = new Question("Which river flows through Paris?", "River Seine", "River Nile", "River Shannon");
+quiz[1] = new Question("In which country is the UK’s highest mountain, Ben Nevis?", "Scotland", "Wales", "England");
+quiz[2] = new Question("Mount Vesuvius overlooks which modern Italian city?", "Naples", "Rome", "Milan");
+quiz[3] = new Question("What is the highest active volcano in Europe?", "Mount Etna", "Mount Vesuvius", "Katla volcano");
+quiz[4] = new Question("Which European capital city is divided by canals into about 90 islands joined by about 400 bridges?", "Amsterdam", "Venice", "Dublin");
+quiz[5] = new Question("What’s the world’s biggest port?", "Port of Shanghai", "Port of Dubai", "Port of Hong Kong");
+quiz[6] = new Question("Which South American country has land borders with ten other countries?", "Brazil", "Peru", "Chile");
+quiz[7] = new Question("Which city is also known as ‘The Eternal City’?", "Rome", "New York", "Paris");
+quiz[8] = new Question("The Great Barrier Reef is off the coast of which Australian state?", "Queensland", "New South Wales", "Victoria");
+quiz[9] = new Question("Which island would you Visit to kiss the Blarney Stone?", "Ireland", "Sicily", "Mykonos");
 let randomQuestion;
 let answers = [];
 let currentScore = 0;

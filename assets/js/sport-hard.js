@@ -2,16 +2,16 @@
 
 //variables
 let quiz = [];
-quiz[0] = new Question("Who holds the women's 100m world record?", "Florence Griffith-Joyner (10.49 seconds set in 1988)", "Put in wrong answer", "Put in wrong answer");
-quiz[1] = new Question("Who won her 7th World Championship snooker title in 1994?", "Alison Fisher", "Put in wrong answer", "Put in wrong answer");
-quiz[2] = new Question("What's the oldest stroke used in competitive swimming?", "Breastroke", "Put in wrong answer", "Put in wrong answer");
-quiz[3] = new Question("Which course is the traditional home of the Masters?", "Augusta", "Put in wrong answer", "Put in wrong answer");
-quiz[4] = new Question("Which sport was reintroduced to the 1988 Seoul Olympics after an absence of 64 years?", "Tennis", "Put in wrong answer", "Put in wrong answer");
-quiz[5] = new Question("Who fought Mohammed Ali In The Rumble In The Jungle?", "George Foreman", "Put in wrong answer", "Put in wrong answer");
-quiz[6] = new Question("Which member of the British royal family competed in the 1976 Montreal Olympic Games?", "Princess Anne", "Put in wrong answer", "Put in wrong answer");
-quiz[7] = new Question("Who is the most decorated female British athlete with five Olympic medals?", "Katherine Grainger (rower)", "Put in wrong answer", "Put in wrong answer");
-quiz[8] = new Question("Which football team are known as the Gunners?", "Arsenal", "Put in wrong answer", "Put in wrong answer");
-quiz[9] = new Question("What are the five ring colours on the Olympic flag?", "Blue, yellow, black, green and red", "Put in wrong answer", "Put in wrong answer");
+quiz[0] = new Question("Who holds the women's 100m world record?", "Florence Griffith-Joyner", "Jane Gurk", "Palm Knicks");
+quiz[1] = new Question("Who won her 7th World Championship snooker title in 1994?", "Alison Fisher", "Ciara Fisher", "Laura Carr");
+quiz[2] = new Question("What's the oldest stroke used in competitive swimming?", "Breastroke", "Butterfly", "Backstroke");
+quiz[3] = new Question("Which course is the traditional home of the Masters?", "Augusta", "Portrush", "St Andrews");
+quiz[4] = new Question("Which sport was reintroduced to the 1988 Seoul Olympics after an absence of 64 years?", "Tennis", "Golf", "Soccer");
+quiz[5] = new Question("Who fought Mohammed Ali In The Rumble In The Jungle?", "George Foreman", "Sugar Ray Leonard", "Marvin Hagler");
+quiz[6] = new Question("Which member of the British royal family competed in the 1976 Montreal Olympic Games?", "Princess Anne", "Prince Philip", "Princess Margaret");
+quiz[7] = new Question("Who is the most decorated female British athlete with five Olympic medals?", "Katherine Grainger", "Kelly Adams", "Liz Earl");
+quiz[8] = new Question("Which football team are known as the Gunners?", "Arsenal", "Liverpool", "Manchester United");
+quiz[9] = new Question("What are the five ring colours on the Olympic flag?", "Blue, yellow, black, green and red", "Blue, yellow, black, purple and red", "Blue, yellow, orange, green and red");
 let randomQuestion;
 let answers = [];
 let currentScore = 0;

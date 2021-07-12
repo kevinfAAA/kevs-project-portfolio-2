@@ -2,16 +2,16 @@
 
 //variables
 let quiz = [];
-quiz[0] = new Question("What colour were the pyramids at Giza originally?", "White", "Put in wrong answer", "Put in wrong answer");
-quiz[1] = new Question("The first televised address from the Oval Office was made in 1947 by which President?", "President Truman", "Put in wrong answer", "Put in wrong answer");
-quiz[2] = new Question("In November 1921, the Japanese Prime Minister Hara Takashi was assassinated in which city?", "Tokyo", "Put in wrong answer", "Put in wrong answer");
-quiz[3] = new Question("Who found the entrance to Tutankhamun's tomb in the Valley of the Kings in Nov 1922?", "Howard Carter", "Put in wrong answer", "Put in wrong answer");
-quiz[4] = new Question("On the 4th November 1956, Soviet troops entered which country in order to quell a rebellion?", "Hungary", "Put in wrong answer", "Put in wrong answer");
-quiz[5] = new Question("Which Apache leader in 1886 after 29 years years of fighting finally surrendered in Arizona?", "Geronimo", "Put in wrong answer", "Put in wrong answer");
-quiz[6] = new Question("In 1904, the area that is known as 'Times Square' in Manhattan was renamed to Times Square, what was it called before?", "Long Ace Square", "Put in wrong answer", "Put in wrong answer");
-quiz[7] = new Question("Who is the Roman god of agriculture?", "Saturn", "Put in wrong answer", "Put in wrong answer");
-quiz[8] = new Question("Manchester United players and 15 other passengers were killed in February 1958 in an accident that became known as what?", "Munich air disaster", "Put in wrong answer", "Put in wrong answer");
-quiz[9] = new Question("What was the name of the mythological monster that had nine heads?", "Hydra", "Put in wrong answer", "Put in wrong answer");
+quiz[0] = new Question("What colour were the pyramids at Giza originally?", "White", "Gold", "Green");
+quiz[1] = new Question("The first televised address from the Oval Office was made in 1947 by which President?", "President Truman", "President Johnson", "President Eisenhower");
+quiz[2] = new Question("In November 1921, the Japanese Prime Minister Hara Takashi was assassinated in which city?", "Tokyo", "Hong Kong", "Yokohama");
+quiz[3] = new Question("Who found the entrance to Tutankhamun's tomb in the Valley of the Kings in Nov 1922?", "Howard Carter", "Pete Curts", "Mick Jones");
+quiz[4] = new Question("On the 4th November 1956, Soviet troops entered which country in order to quell a rebellion?", "Hungary", "Poland", "Ukraine");
+quiz[5] = new Question("Which Apache leader in 1886 after 29 years years of fighting finally surrendered in Arizona?", "Geronimo", "Cochise", "Mangas Coloradas");
+quiz[6] = new Question("In 1904, the area that is known as 'Times Square' in Manhattan was renamed to Times Square, what was it called before?", "Long Ace Square", "Top Ace Square", "Right Ace Square");
+quiz[7] = new Question("Who is the Roman god of agriculture?", "Saturn", "Japitar", "Venus");
+quiz[8] = new Question("Manchester United players and 15 other passengers were killed in February 1958 in an accident that became known as what?", "Munich air disaster", "Berlin air disaster", "Naples air disaster");
+quiz[9] = new Question("What was the name of the mythological monster that had nine heads?", "Hydra", "Griffin", "Manticore");
 let randomQuestion;
 let answers = [];
 let currentScore = 0;

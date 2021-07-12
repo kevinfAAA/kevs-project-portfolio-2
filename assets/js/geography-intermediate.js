@@ -2,16 +2,16 @@
 
 //variables
 let quiz = [];
-quiz[0] = new Question("In which country would you be if you were Visiting the Taj Mahal?", "India", "Put in wrong answer", "Put in wrong answer");
-quiz[1] = new Question("In which Scandinavian country would you find fjords?", "Norway", "Put in wrong answer", "Put in wrong answer");
-quiz[2] = new Question("Which country’s name could be part of a Christmas dinner?", "Turkey", "Put in wrong answer", "Put in wrong answer");
-quiz[3] = new Question("Which stretch of water separates Anglesey and Wales?", "Menai Strait", "Put in wrong answer", "Put in wrong answer");
-quiz[4] = new Question("In which continent is the world’s longest river, the Nile?", "Africa", "Put in wrong answer", "Put in wrong answer");
-quiz[5] = new Question("What colour is the spot in the middle of the Japanese flag?", "Red", "Put in wrong answer", "Put in wrong answer");
-quiz[6] = new Question("Is Australia in the northern or the southern hemisphere?", "Southern", "Put in wrong answer", "Put in wrong answer");
-quiz[7] = new Question("What does each star on the flag of the United States stand for?", "A state", "Put in wrong answer", "Put in wrong answer");
-quiz[8] = new Question("Which bridge, one of the oldest roadway bridges in the United States, was completed in 1883 and spans the East River?", "Brooklyn Bridge", "Put in wrong answer", "Put in wrong answer");
-quiz[9] = new Question("On an O.S Map with a scale of 1:25000, how many inches represent one mile?", "Two and a half", "Put in wrong answer", "Put in wrong answer");
+quiz[0] = new Question("In which country would you be if you were Visiting the Taj Mahal?", "India", "Thailand", "China");
+quiz[1] = new Question("In which Scandinavian country would you find fjords?", "Norway", "Sweeden", "Finland");
+quiz[2] = new Question("Which country’s name could be part of a Christmas dinner?", "Turkey", "Potato", "Ham");
+quiz[3] = new Question("Which stretch of water separates Anglesey and Wales?", "Menai Strait", "George Strait", "Hormuz Strait");
+quiz[4] = new Question("In which continent is the world’s longest river, the Nile?", "Africa", "South America", "Europe");
+quiz[5] = new Question("What colour is the spot in the middle of the Japanese flag?", "Red", "Yellow", "Blue");
+quiz[6] = new Question("What hemisphere is Australia in?", "Southern", "Northern", "Middle");
+quiz[7] = new Question("What does each star on the flag of the United States stand for?", "A state", "A City", "A president");
+quiz[8] = new Question("Which bridge, one of the oldest roadway bridges in the United States, was completed in 1883 and spans the East River?", "Brooklyn Bridge", "Golden Gate Bride", "Seven Mile Bridge");
+quiz[9] = new Question("On an O.S Map with a scale of 1:25000, how many inches represent one mile?", "Two and a half", "Four", "Three and half");
 let randomQuestion;
 let answers = [];
 let currentScore = 0;

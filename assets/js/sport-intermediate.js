@@ -2,16 +2,16 @@
 
 //variables
 let quiz = [];
-quiz[0] = new Question("In cricket, who scored England's first test century?", "W.G. Grace", "Put in wrong answer", "Put in wrong answer");
-quiz[1] = new Question("Which horse won the Grand National in 1994?", "Minnehoma", "Put in wrong answer", "Put in wrong answer");
-quiz[2] = new Question("How many players are there in an ice hockey team?", "Six", "Put in wrong answer", "Put in wrong answer");
-quiz[3] = new Question("Which Canadian was stripped of his gold medal at the 1988 Olympics after being found to have taken banned steroids?", "Ben Johnson", "Put in wrong answer", "Put in wrong answer");
-quiz[4] = new Question("Which three disciplines do horse riders compete in in three day eventing?", "Dressage, cross-country and show jumping", "Put in wrong answer", "Put in wrong answer");
-quiz[5] = new Question("Which tennis player currently holds the world record for the fastest serve?", "John Isner (157.2mph)", "Put in wrong answer", "Put in wrong answer");
-quiz[6] = new Question("Toxophily is a popular sport, by what name is it more commonly known?", "Archery", "Put in wrong answer", "Put in wrong answer");
-quiz[7] = new Question("A 'buttonhook' is a term used in which sport?", "A state", "Basketball", "Put in wrong answer");
-quiz[8] = new Question("What time is the men's 200m world record held by Usain Bolt?", "19.19 seconds", "Put in wrong answer", "Put in wrong answer");
-quiz[9] = new Question("Who was Britain's first million pound footballer?", "Trevor Francis", "Put in wrong answer", "Put in wrong answer");
+quiz[0] = new Question("In cricket, who scored England's first test century?", "W.G. Grace", "George North", "Tom Grace");
+quiz[1] = new Question("Which horse won the Grand National in 1994?", "Minnehoma", "Arkle", "Shadow's Kiss");
+quiz[2] = new Question("How many players are there in an ice hockey team?", "Six", "Eight", "Ten");
+quiz[3] = new Question("Which Canadian was stripped of his gold medal at the 1988 Olympics after being found to have taken banned steroids?", "Ben Johnson", "Tom Micheals", "Steve Walker");
+quiz[4] = new Question("Which three disciplines do horse riders compete in in three day eventing?", "Dressage, cross-country and show jumping", "Dressage, Hunting and show jumping", "Dressage, High-Jump and show jumping");
+quiz[5] = new Question("Which tennis player currently holds the world record for the fastest serve?", "John Isner", "Novak Djokovic", "John McEnroe");
+quiz[6] = new Question("Toxophily is a popular sport, by what name is it more commonly known?", "Archery", "Hurling", "Swimming");
+quiz[7] = new Question("A 'buttonhook' is a term used in which sport?", "American Footbal", "Boxing", "Basketball");
+quiz[8] = new Question("What time is the men's 200m world record held by Usain Bolt?", "19.19 seconds", "19.37 seconds", "19.03 seconds");
+quiz[9] = new Question("Who was Britain's first million pound footballer?", "Trevor Francis", "Bobby Charlton", "Gary Lineker");
 let randomQuestion;
 let answers = [];
 let currentScore = 0;

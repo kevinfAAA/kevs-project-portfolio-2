@@ -2,16 +2,16 @@
 
 //variables
 let quiz = [];
-quiz[0] = new Question("What was the name of the baker in whose bakery the Great Fire of London of 1666 apparently started?", "Thomas Farriner (or Farynor)", "Put in wrong answer", "Put in wrong answer");
-quiz[1] = new Question("The Spanish Civil War started in 1936 and ended in which year?", "1939", "Put in wrong answer", "Put in wrong answer");
-quiz[2] = new Question("The horror of Guernica was portrayed in a painting by which artist?", "Pablo Picasso", "Put in wrong answer", "Put in wrong answer");
-quiz[3] = new Question("Which US President had the middle name Milhous?", "Richard Nixon", "Put in wrong answer", "Put in wrong answer");
-quiz[4] = new Question("Which two students founded Google in 1998?", "Larry Page and Sergey Brin", "Put in wrong answer", "Put in wrong answer");
-quiz[5] = new Question("In 1870 the Third Republic is declared in France after which leader was deposed?", "Emperor Napolean III", "Put in wrong answer", "Put in wrong answer");
-quiz[6] = new Question("In 1958 the first artificial satellite launched in 1957 fell back to earth. What was its name?", "Sputnik 1", "Put in wrong answer", "Put in wrong answer");
-quiz[7] = new Question("In 1918 Finland declared its independence from which country?", "Russia", "Put in wrong answer", "Put in wrong answer");
-quiz[8] = new Question("Which iconic structure began its construction in California in January 1933?", "Golden Gate Bridge", "Put in wrong answer", "Put in wrong answer");
-quiz[9] = new Question("Which long distance train had its first run in October 1883?", "Venezuela", "Orient Express", "Put in wrong answer");
+quiz[0] = new Question("What was the name of the baker in whose bakery the Great Fire of London of 1666 apparently started?", "Thomas Farriner", "Bill Kiplin", "Frank Masters");
+quiz[1] = new Question("The Spanish Civil War started in 1936 and ended in which year?", "1939", "1941", "1937");
+quiz[2] = new Question("The horror of Guernica was portrayed in a painting by which artist?", "Pablo Picasso", "Vincent van Gogh", "Leonardo da Vinci");
+quiz[3] = new Question("Which US President had the middle name Milhous?", "Richard Nixon", "Jimmy Carter", "Ronald Reagan");
+quiz[4] = new Question("Which two students founded Google in 1998?", "Larry Page and Sergey Brin", "Mark Zuckerberg and Eduardo Saverin", "Jawed Karim and Chad Hurley");
+quiz[5] = new Question("In 1870 the Third Republic is declared in France after which leader was deposed?", "Emperor Napolean III", "Emperor Napolean II", "Emperor Napolean I");
+quiz[6] = new Question("In 1958 the first artificial satellite launched in 1957 fell back to earth. What was its name?", "Sputnik 1", "Sputnik 2", "Sputnik 3");
+quiz[7] = new Question("In 1918 Finland declared its independence from which country?", "Russia", "Sweeden", "Norway");
+quiz[8] = new Question("Which iconic structure began its construction in California in January 1933?", "Golden Gate Bridge", "Seven Mile Bridge", "Brooklyn Bridge");
+quiz[9] = new Question("Which long distance train had its first run in October 1883?", "TGV", "Orient Express", "Flying Scotsman");
 let randomQuestion;
 let answers = [];
 let currentScore = 0;

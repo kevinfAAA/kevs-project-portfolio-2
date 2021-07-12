@@ -2,16 +2,16 @@
 
 //variables
 let quiz = [];
-quiz[0] = new Question("Where are the 2028 Olympics going to be held?", "Los Angeles, USA", "Put in wrong answer", "Put in wrong answer");
-quiz[1] = new Question("Which is the highest football ground in England?", "West Bromwich Albion at 552ft", "Put in wrong answer", "Put in wrong answer");
-quiz[2] = new Question("What age was George Foreman when he became the oldest heavyweight boxing champion in history?", "45", "Put in wrong answer", "Put in wrong answer");
-quiz[3] = new Question("What is the point value of the pink ball in snooker?", "Six", "Put in wrong answer", "Put in wrong answer");
-quiz[4] = new Question("What is Floyd Mayweather’s boxing nickname?", "Money", "Put in wrong answer", "Put in wrong answer");
-quiz[5] = new Question("Which country joined the Five Nations in 2000 to make it the Six Nations?", "Italy", "Put in wrong answer", "Put in wrong answer");
-quiz[6] = new Question("What does VAR stand for?", "Video Assistant Referee", "Put in wrong answer", "Put in wrong answer");
-quiz[7] = new Question("At which Summer Olympic Games did 28 African countries refuse to participate?", "1976 Summer Olympics, in Montreal", "Put in wrong answer", "Put in wrong answer");
-quiz[8] = new Question("Who holds the men's 400m world record of 43.03 seconds?", "Wayde van Niekerk", "Put in wrong answer", "Put in wrong answer");
-quiz[9] = new Question("Which two teams compete in the Turin derby?", "Juventus and Torino", "Put in wrong answer", "Put in wrong answer");
+quiz[0] = new Question("Where are the 2028 Olympics going to be held?", "Los Angeles", "Berlin", "Dhubai");
+quiz[1] = new Question("Which is the highest football ground in England?", "West Bromwich Albion", "White Heart lane", "Wembley");
+quiz[2] = new Question("What age was George Foreman when he became the oldest heavyweight boxing champion in history?", "45", "35", "40");
+quiz[3] = new Question("What is the point value of the pink ball in snooker?", "Six", "Five", "Four");
+quiz[4] = new Question("What is Floyd Mayweather’s boxing nickname?", "Money", "Dollar", "Cents");
+quiz[5] = new Question("Which country joined the Five Nations in 2000 to make it the Six Nations?", "Italy", "France", "Ireland");
+quiz[6] = new Question("What does VAR stand for?", "Video Assistant Referee", "Video Aided Referee", "Video Assistant Response");
+quiz[7] = new Question("At which Summer Olympic Games did 28 African countries refuse to participate?", "1976 Summer Olympics", "1980 Summer Olympics", "1972 Summer Olympics");
+quiz[8] = new Question("Who holds the men's 400m world record of 43.03 seconds?", "Wayde van Niekerk", "Usain Bolt", "Thomas Barr");
+quiz[9] = new Question("Which two teams compete in the Turin derby?", "Juventus and Torino", "Juventus and Milan", "Lazio and Milan");
 let randomQuestion;
 let answers = [];
 let currentScore = 0;
