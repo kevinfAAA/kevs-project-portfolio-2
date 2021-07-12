@@ -49,34 +49,34 @@
          <div class="comment-row">
           <h3>Please tell us about your experience</h3>
           <div class="comment-ask">
-            <label for="fname">First Name</label>
+            <label for="fname">First Name<span class="mandatory">*</span></label>
           </div>
           <div class="comment-area">
-            <input type="text" id="fname" name="firstname" placeholder="Name..">
+            <input type="text" id="fname" name="firstname" required aria-required="true" placeholder="Name.." required="">
           </div>
         </div>
         <div class="comment-row">
           <div class="comment-ask">
-            <label for="lname">Last Name</label>
+            <label for="lname">Last Name<span class="mandatory">*</span></label>
           </div>
           <div class="comment-area">
-            <input type="text" id="lname" name="lastname" placeholder="Last name..">
+            <input type="text" id="lname" name="lastname" required aria-required="true" placeholder="Last name.." required="">
           </div>
         </div>
         <div class="comment-row">
         <div class="comment-ask">
-          <label for="email">Email Address</label>
+          <label for="email">Email Address<span class="mandatory">*</span></label>
         </div>
         <div class="comment-area">
-          <input type="text" id="email" name="email" placeholder="Email address..">
+          <input type="text" id="email" name="email" required aria-required="true" placeholder="Email address.." required="">
         </div>
         </div>
         <div class="comment-row">
           <div class="comment-ask">
-            <label for="comment">Leave a Comment</label>
+            <label for="comment">Leave a Comment<span class="mandatory">*</span></label>
           </div>
           <div class="comment-area">
-            <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
+            <textarea id="comment" name="comment" required aria-required="true" placeholder="Write something.." style="height:200px" required=""></textarea>
           </div>
         </div>
         <div class="comment-row">
