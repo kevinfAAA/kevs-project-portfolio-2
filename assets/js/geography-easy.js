@@ -40,7 +40,7 @@ function shuffle(quiz) {
 function btnProvideQuestion() { 
   
 	let randomNumber = Math.floor(Math.random()*quiz.length);
-	randomQuestion = quiz[randomNumber]; //getQuestion
+	randomQuestion = quiz[randomNumber];
   answers = [randomQuestion.rightAnswer, randomQuestion.wrongAnswer1, randomQuestion.wrongAnswer2];
   shuffle(answers);
   
@@ -81,9 +81,7 @@ function checkAnswer(answer) {
   if (answer == randomQuestion.rightAnswer) {
     adjustScore(true);
     btnProvideQuestion();
-  } else { 
-    alert("Wrong Answer, Try Again!!!");
-  }	 
+  } 
   if(currentScore === 10) {
     window.location.assign("/assets/html/winner.html");
   }

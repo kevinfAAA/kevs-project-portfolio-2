@@ -27,15 +27,20 @@ function Question(question,rightAnswer,wrongAnswer1,wrongAnswer2) {
     this.wrongAnswer2 = wrongAnswer2;
 };
 
-function shuffle(o) {
-	for(let j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-	return o;
-};
+function shuffle(quiz) {
+  for (let i = quiz.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      let temp = quiz[i];
+      quiz[i] = quiz[j];
+      quiz[j] = temp;
+  }
+}
+
 
 function btnProvideQuestion() { 
   
 	let randomNumber = Math.floor(Math.random()*quiz.length);
-	randomQuestion = quiz[randomNumber]; //getQuestion
+	randomQuestion = quiz[randomNumber];
   answers = [randomQuestion.rightAnswer, randomQuestion.wrongAnswer1, randomQuestion.wrongAnswer2];
   shuffle(answers);
   
@@ -68,10 +73,6 @@ function adjustScore(isCorrect) {
   debugger;
   if (isCorrect) {
     currentScore++;
-  } else {
-    if (currentScore > 0) {
-      currentScore--;
-  	}
   }
   document.getElementById("score").innerHTML = currentScore;
 }
@@ -80,11 +81,12 @@ function checkAnswer(answer) {
   if (answer == randomQuestion.rightAnswer) {
     adjustScore(true);
     btnProvideQuestion();
-  } else { 
-    alert("Loser!");
-    adjustScore(false);
-  }	  
+  } 
+  if(currentScore === 10) {
+    window.location.assign("/assets/html/winner.html");
+  }
 }
+
 
 /*Timer*/
 
