@@ -24,7 +24,7 @@ body {
 }
 
 .title a {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .title a:hover {
@@ -71,7 +71,8 @@ p {
 
 
 #levels {
-  font-size: 40px;
+  font-size: 32px;
+  font-weight: 600;
   letter-spacing: 4px;
   line-height: 75px;
   text-align: center;
@@ -198,7 +199,6 @@ footer {
 
 footer .social {
   text-align: center;
-  padding-bottom:25px;
 }
   
 footer .social > a {
@@ -220,7 +220,7 @@ footer .social > a:hover {
 }
   
 footer .copyright {
-  margin-top: 80px;
+  margin-top: 20px;
   font-size: 13px;
   color:#283350;
 }
@@ -239,6 +239,8 @@ footer .copyright {
 
 .gallery {
   border: 1px solid #FFB500;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .gallery:hover {
@@ -255,6 +257,7 @@ footer .copyright {
   text-align: center;
   color: #283350;
   font-size: 24px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -300,6 +303,7 @@ footer .copyright {
   font-size: 18px;
   display:flex;
   color:#283350;
+  margin: 5px;
 }
 
 .geog-q-and-a {
@@ -345,6 +349,7 @@ footer .copyright {
   font-size: 18px;
   display:flex;
   color:#283350;
+  margin: 5px;
 }
 
 .hist-q-and-a {
@@ -389,6 +394,7 @@ footer .copyright {
   font-size: 18px;
   display:flex;
   color:#283350;
+  margin: 5px;
 }
 
 .sport-q-and-a {
@@ -407,6 +413,7 @@ button {
   color: #283350;
   background: #F93800;
   border: 1px solid #283350;
+  border-radius: 5px;
 }
 
 button:active {
@@ -476,7 +483,7 @@ button:active {
   font-size: 32px;
 }
 
-/*Times-up Page*/
+/*Times-up and Winners Page*/
 
 #times-up {
   width: 100%;
@@ -489,6 +496,7 @@ button:active {
 #times-up img {
   max-width: 100%;
   height: auto;
+  border: 2px solid #283350;
 }
 
 #winner {
@@ -502,7 +510,35 @@ button:active {
 #winner img {
   max-width: 100%;
   height: auto;
+  border: 2px solid #283350;
 }
+
+.new-quiz {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  margin-top: 20px;
+}
+
+.return-home {
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  background-color: #FFB500;
+  padding: 20px;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.return-home:active {
+  background: none;
+}
+
+.return-home:hover {
+  border: 2px solid #283350;
+}
+
 
 
 /*Viewport sizes max/min 800px wide */
@@ -529,6 +565,10 @@ button:active {
     border: none;
   }
 
+  footer .social {
+    margin-top: 30px; 
+  }
+
   footer .social > a {
     margin:0 10px; 
   }
@@ -536,7 +576,7 @@ button:active {
   #geog-gallery {
     width: 100%;
   }
-  
+
   #geog-quiz-area {
     width: 100%;
   }
