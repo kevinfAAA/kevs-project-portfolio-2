@@ -334,19 +334,12 @@ Perhaps the Durstenfeld shuffle algorithm is not the best function to use or nee
 
 
 2. When publishing my GitPod workspace to GitHub Pages, a number of issues appeared due to the file path structure used.
-<br>
 Initially I created a html folder and placed it in my assets folder to hold all my html files accept for the index.html file.
-<br>
 This worked fine when using GitPod, but once I published to GitHub the styling and href links stopped working.
-<br>
 To Resolve this problem I took all html files out of the assets/html folder and placed them along side the index.html file. It resolved the issue.
-<br>
 A similar issue was experienced when linking my javascript functions to my index.html.
-<br>
 Again when using GitPod I was able to link my javascript functions to me index.html, but once I published to GitHub the links re-directed me to a 404 page.
-<br>
 Unfortunatly the only solution I could find was to either have the javascript functions link to index.html on my GitPod workspace or my GitHub.
-<br>
 I decided to use the path link to GitHub so the project could be fully deployed.
 
 
