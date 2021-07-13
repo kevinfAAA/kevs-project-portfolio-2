@@ -330,8 +330,8 @@ The inofrmation that is submited is posted to https://formdump.codeinstitute.net
 
 1. The shuffle function used to generate random questions on the quiz webpage is based on the [Durstenfeld shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#The_modern_algorithm) algorithm. The function shuffles the questions and generates 
 a random question as expected, but there is a bug as while the shuffle function works as expected, the same question can be generated more then once meaning the user may be asked the same question twice and recieve a score for giving the correct answer to a question he/she already answered. 
-<br>
 Perhaps the Durstenfeld shuffle algorithm is not the best function to use or needs to be developed further for what I'm trying to acheive.
+
 
 2. When publishing my GitPod workspace to GitHub Pages, a number of issues appeared due to the file path structure used.
 <br>
@@ -349,14 +349,12 @@ Unfortunatly the only solution I could find was to either have the javascript fu
 <br>
 I decided to use the path link to GitHub so the project could be fully deployed.
 
+
 3. When developing my Landing page I wanted to create a yellow footer with my social icons in red, but when I creted it I was unable to push it to the bottom of the page, the red background colour was still visable.
-<br>
 To mitigate the problem I updated the styling and changed the footer colour to the same as the background colour and gave the social icons the yellow color.
-<br>
 I think the solution looks better to my inital vision.
 
 4. The styling of the quiz page on mobile can be improved. 
-<br>
 The questions when viewed on mobile have limited space for long questions, while there is a considerable space between the "Question" and "Question being asked".
 
 
