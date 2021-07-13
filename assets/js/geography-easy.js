@@ -84,7 +84,6 @@ function checkAnswer(answer) {
   } 
   if(currentScore === 10) {
     window.location.assign("/kevs-project-portfolio-2/winner.html");
-    window.location.assign("/winner.html");
   }
 }
 
@@ -157,7 +156,6 @@ function startTimer() {
 
     if (timeLeft === 0) {
       window.location.assign("/kevs-project-portfolio-2/times-up.html");
-      window.location.assign("/times-up.html");
     } 
   }, 1000);
 }
