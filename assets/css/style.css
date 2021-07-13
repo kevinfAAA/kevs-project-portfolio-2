@@ -593,10 +593,4 @@ button:active {
 }
 
 
-/*Viewport sizes max/min 500px wide */
-
-@media only screen and (max-width: 500px) {
-  
-}
-
 

@@ -5,9 +5,9 @@
 A website targeted to users who want to test there trivia knowledge with multiple levels of difficulty to choose from. 
 It showcases my HTML, CSS and Javascript ability.
 
-A live website can be found [here](https://github.com/kevinfAAA/kevs-project-portfolio-2/).
+A live website can be found [here](https://kevinfaaa.github.io/kevs-project-portfolio-2/).
 
-![Website Landing Page](assets/images/landing-page)
+![Website Landing Page](assets/images/landing-page.PNG)
 
 # Table of Contents
 - [1. Introduction](#introduction)
@@ -17,6 +17,7 @@ A live website can be found [here](https://github.com/kevinfAAA/kevs-project-por
 - [5. Contribution Links](#contribution-links)
 - [6. Deployment](#deployment)
 - [7. Wireframe](#wireframe)
+- [8. Walk Through](#Walk-Through)
 
 <a name="introduction"></a>
 
@@ -121,6 +122,9 @@ The header (FUN QUIZES) re-directs the user to the landing page.
 #### Winners Section
 A Giphy informing the user they won.
 
+#### Pick a new Quiz
+The "PICK A NEW QUIZ" button re-directs the user to the landing page.
+
 #### Footer
 The footer contains links to the following social media websites:
 1. Facebook
@@ -136,6 +140,9 @@ The header (FUN QUIZES) re-directs the user to the landing page.
 
 #### Times Up Section
 A Giphy informing the user that there time is up.
+
+#### Try Again
+The "TRY AGAIN" button re-directs the user to the landing page.
 
 #### Footer
 The footer contains links to the following social media websites:
@@ -207,7 +214,7 @@ Congratulations! No Warning Found.
 
 ##	Am I responsive?
 
-![Am I Responsive](PUT IN IMAGE HERE FROM RESPONSIVE WEBSITE)
+![Am I Responsive](assets/images/amiresponsive.JPG)
 
 I used [Am I Responsive](http://ami.responsivedesign.is/) to view how my website is displayed on different media viewports. The results suggust that the webisite is responsive for the follwoing devices:
 - Widescreen desktop.
@@ -305,11 +312,15 @@ The inofrmation that is submited is posted to https://formdump.codeinstitute.net
 #### Header
 ##### FUN QUIZES
 - When “FUN QUIZES” is left clicked with the mouse, the browser sends the user to the Landing page. It worked as expected.
+##### PICK A NEW QUIZ
+- When "PICK A NEW QUIZ" is left clicked with the mouse, the browser sends the user to the Landing page. It worked as expected.
 
 #### Times Up Page
 #### Header
 ##### FUN QUIZES
 - When “FUN QUIZES” is left clicked with the mouse, the browser sends the user to the Landing page. It worked as expected.
+##### TRY AGAIN
+- When "TRY AGAIN" is left clicked with the mouse, the browser sends the user to the Landing page. It worked as expected.
 
 <a name="bugs"></a>
 
@@ -320,7 +331,34 @@ The inofrmation that is submited is posted to https://formdump.codeinstitute.net
 1. The shuffle function used to generate random questions on the quiz webpage is based on the [Durstenfeld shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#The_modern_algorithm) algorithm. The function shuffles the questions and generates 
 a random question as expected, but there is a bug as while the shuffle function works as expected, the same question can be generated more then once meaning the user may be asked the same question twice and recieve a score for giving the correct answer to a question he/she already answered. 
 <br>
-Perhaps the Durstenfeld shuffle algorithm is not the best function to use or needs to be developed further for what I'm trying to acheive.  
+Perhaps the Durstenfeld shuffle algorithm is not the best function to use or needs to be developed further for what I'm trying to acheive.
+
+2. When publishing my GitPod workspace to GitHub Pages, a number of issues appeared due to the file path structure used.
+<br>
+Initially I created a html folder and placed it in my assets folder to hold all my html files accept for the index.html file.
+<br>
+This worked fine when using GitPod, but once I published to GitHub the styling and href links stopped working.
+<br>
+To Resolve this problem I took all html files out of the assets/html folder and placed them along side the index.html file. It resolved the issue.
+<br>
+A similar issue was experienced when linking my javascript functions to my index.html.
+<br>
+Again when using GitPod I was able to link my javascript functions to me index.html, but once I published to GitHub the links re-directed me to a 404 page.
+<br>
+Unfortunatly the only solution I could find was to either have the javascript functions link to index.html on my GitPod workspace or my GitHub.
+<br>
+I decided to use the path link to GitHub so the project could be fully deployed.
+
+3. When developing my Landing page I wanted to create a yellow footer with my social icons in red, but when I creted it I was unable to push it to the bottom of the page, the red background colour was still visable.
+<br>
+To mitigate the problem I updated the styling and changed the footer colour to the same as the background colour and gave the social icons the yellow color.
+<br>
+I think the solution looks better to my inital vision.
+
+4. The styling of the quiz page on mobile can be improved. 
+<br>
+The questions when viewed on mobile have limited space for long questions, while there is a considerable space between the "Question" and "Question being asked".
+
 
 
 <a name="future-updates"></a>
@@ -331,6 +369,10 @@ Perhaps the Durstenfeld shuffle algorithm is not the best function to use or nee
 
 1. Look into an alternative for the Durstenfeld shuffle algorithm or develop this algorithm further as it shuffles the questions on the quiz webpage as expected but to improve the user experience a question should only be randomly generated once, meaning the same question should not be generated on more then one occasion. 
 2. When the user selects a wrong answer the button will turn red instead of turning blue.
+3. Look at reviewing the question area when viewing on mobile, put the "Question" above the "Question being asked" allowing more room for long questions and making them easlier more readable.
+4. Make the styling mor fun, add emoji's to some of the headings.
+5. Add a stop/start function to the timer on the quiz pages.
+6. Add a Google Charts to the landing page for users to track there quiz difficulty progression. 
 
 
 <a name="contribution-links"></a>
@@ -349,6 +391,11 @@ Perhaps the Durstenfeld shuffle algorithm is not the best function to use or nee
 - [W3C Markup validation](https://validator.w3.org/#validate_by_input)
 - [W3C CSS validation](https://jigsaw.w3.org/css-validator/)
 - [Durstenfeld shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#The_modern_algorithm) 
+- [Quiz Function (CodePen)](https://codepen.io/savant/pen/gbaveO)
+- [Timer Function (CSS Tricks)](https://css-tricks.com/how-to-create-an-animated-countdown-timer-with-html-css-and-javascript/)
+- [Quiz Questions](https://www.express.co.uk/life-style/life/1278265/100-general-knowledge-quiz-questions-and-answers)
+- [GIPHY](https://giphy.com/search/times-up)
+
 
 <a name="deployment"></a>
 
@@ -374,7 +421,65 @@ This webidte was deployed via GitHub Pages. The following steps explain the depl
 [Go to the top](#table-of-contents)
 
 
+## Desktop Landing Page
+![Desktop Landing Page](assets/images/wireframes/Desktop-Landing-Page.png)
+
+<br>
+
+![Wireframe1](assets/images/wireframes/Desktop-Landing-Page_2.png)
+
+## Desktop Quiz Topic Page
+![Desktop Quiz Topic Page](assets/images/wireframes/Desktop-Quiz-Topic-Page.png)
+
+## Desktop Quiz Page
+![Desktop Quiz Page](assets/images/wireframes/Desktop-Quiz-Page.png)
+
+## Desktop Winners Page
+![Desktop Winners Page](assets/images/wireframes/Desktop-Winners-Page.png)
+
+## Desktop Times Up Page
+![Desktop Times Up Page](assets/images/wireframes/Desktop-Times-Up-Page.png)
+
+## iPad Landing Page
+![iPad Landing Page](assets/images/wireframes/iPad-Landing-Page.png)
+
+## iPad Quiz Topic and Quiz Page
+![iPad Quiz Topic and Quiz Page](assets/images/wireframes/iPad-Quiz-Topic-and-Quiz-page.png)
+
+## iPad Winners and Times Up Page
+![iPad Winners and Times Up Page](assets/images/wireframes/iPad-Winners-and-Times-Up-Page.png)
+
+## iPhone X Landing Page and Quiz Topics Page
+![iPhone X Landing Page and Quiz Topics Page](assets/images/wireframes/iPhone-X-Landing-and-Quiz-Topics-Page.png)
+
+## iPhone X Quiz, Winners and Times Up Page
+![iPhone X Quiz, Winners and Times Up Page](assets/images/wireframes/iPhone-X-Quiz-Winners-and-Time-Up-page.png)
+
+
+<a name="Walk Through"></a>
+
+# 7. Walk Through
+
+[Go to the top](#table-of-contents)
+
 ## Landing Page
+![Landing Page](assets/images/walkthrough/landing-page.JPG)
+
+<br>
+
+![Landing Page2](assets/images/walkthrough/landing-page2.JPG)
+
+## Quiz Topic Page
+![Quiz Topic Page](assets/images/walkthrough/quiz-topic-page.JPG)
+
+## Quiz Page
+![Quiz Page](assets/images/walkthrough/quiz-page.JPG)
+
+## Winners Page
+![Winners Page](assets/images/walkthrough/winners-page.JPG)
+
+## Times Up Page
+![Times Up Page](assets/images/walkthrough/times-up-page.JPG)
 
 
 
